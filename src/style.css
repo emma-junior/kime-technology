@@ -1,0 +1,5 @@
+@import "tailwindcss";
+
+.logo {
+  @apply transform translate-x-[45vw] translate-y-[45vh] object-contain;
+}
