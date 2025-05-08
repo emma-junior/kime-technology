@@ -25,8 +25,17 @@ export default class Home {
           ease: "linear",
           scale: 0.6,
           duration: 1,
-          transform: "translate(45vw,0)",
-        });
+          transform: "translate(45vw,2vh)",
+        })
+        .to(
+          ".nav-links",
+          {
+            ease: "linear",
+            duration: 1,
+            y: 30,
+          },
+          "<"
+        );
     }
     window.addEventListener("load", function (event) {
       init(); //do stuff

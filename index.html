@@ -14,7 +14,33 @@
   </head>
   <body>
     <div id="app">
-      <img class="logo" src="/src/logo.png" alt="logo" />
+      <nav class="flex justify-between">
+        <div
+          class="nav-links transform -translate-y-[10vh] absolute left-[10%] cursor-pointer"
+        >
+          <img
+            class="menu w-11 h-12 object-contain"
+            src="/src/assets/menu.svg"
+            alt="menu_icon"
+          />
+        </div>
+        <div class="">
+          <img
+            class="logo transform translate-x-[45vw] translate-y-[45vh] object-contain"
+            src="/src/assets/logo.png"
+            alt="logo"
+          />
+        </div>
+        <div
+          class="nav-links transform absolute right-[10%] -translate-y-[10vh]"
+        >
+          <button
+            class="border-1 border-solid border-[#112A50] px-6 py-2 text-sm text-[#112A50] cursor-pointer"
+          >
+            Request a quote here
+          </button>
+        </div>
+      </nav>
       <script type="module" src="/src/main.js"></script>
     </div>
   </body>
