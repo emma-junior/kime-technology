@@ -1,5 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap");
+@font-face {
+  font-family: PS-Aelyn;
+  src: url("../src/assets/fonts/PS-Aelyn\ Regular.otf");
+}
+
 @import "tailwindcss";
 
-/* .logo {
-  @apply transform translate-x-[45vw] translate-y-[45vh] object-contain;
-} */
+@theme {
+  --font-ps-aelyn: PS-Aelyn, "sans-serif";
+  --font-cabin: Cabin, "sans-serif";
+  --font-cairo: Cairo, "sans-serif";
+}
+
+.text-reveal {
+  display: inline-block;
+  clip-path: inset(0 100% 0 0);
+}

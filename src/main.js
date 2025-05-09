@@ -1,5 +1,8 @@
 import "./style.css";
 import gsap from "gsap";
+import { TextPlugin } from "gsap/all";
+
+gsap.registerPlugin(TextPlugin);
 
 export default class Home {
   constructor() {
@@ -35,11 +38,19 @@ export default class Home {
             y: 30,
           },
           "<"
+        )
+        .to(
+          ".text-reveal",
+          {
+            clipPath: "inset(0 0% 0 0)",
+            duration: 1,
+            ease: "linear",
+          },
+          "+=1"
         );
     }
     window.addEventListener("load", function (event) {
-      init(); //do stuff
-      console.log("Home Intro");
+      init();
     });
   }
 }
