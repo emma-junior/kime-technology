@@ -47,6 +47,34 @@ export default class Home {
             ease: "linear",
           },
           "+=1"
+        )
+        .to(
+          ".image-y",
+          {
+            ease: "linear",
+            duration: 1,
+            y: 0,
+          },
+          "-=0.7"
+        )
+        .to(
+          ".image-x",
+          {
+            ease: "linear",
+            duration: 1,
+            x: 0,
+          },
+          "<"
+        )
+        .to(
+          ".hero-text",
+          {
+            ease: "linear",
+            duration: 1,
+            opacity: 1,
+            x: 0,
+          },
+          "<"
         );
     }
     window.addEventListener("load", function (event) {

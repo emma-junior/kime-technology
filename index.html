@@ -12,59 +12,92 @@
       }
     </style>
   </head>
-  <body>
-    <div id="app">
-      <nav class="flex justify-between">
-        <div
-          class="nav-links transform -translate-y-[10vh] absolute left-[10%] cursor-pointer"
-        >
-          <img
-            class="menu w-11 h-12 object-contain"
-            src="/src/assets/menu.svg"
-            alt="menu_icon"
-          />
-        </div>
-        <div class="">
-          <img
-            class="logo transform translate-x-[45vw] translate-y-[45vh] object-contain"
-            src="/src/assets/logo.png"
-            alt="logo"
-          />
-        </div>
-        <div
-          class="nav-links transform absolute right-[10%] -translate-y-[10vh]"
-        >
-          <button
-            class="font-cabin border-1 border-solid border-[#112A50] px-6 py-2 text-sm text-[#112A50] cursor-pointer"
-          >
-            Request a quote here
-          </button>
-        </div>
-      </nav>
-      <div class="w-[80%] mx-auto mt-32 pl-16 space-y-8">
-        <div>
-          <p class="text-[#6766EF] font-ps-aelyn text-7xl text-reveal">
-            Bookkeeping <span class="text-[#23201E] ml-6">And</span>
-          </p>
-        </div>
-        <div class="ml-72">
-          <p class="text-[#23201E] font-ps-aelyn text-7xl text-reveal">
-            Tech <span class="text-[#6766EF] ml-6">Consulting</span>
-          </p>
-        </div>
-        <div class="ml-24">
-          <p class="text-[#23201E] font-ps-aelyn text-7xl text-reveal">
-            For Mid-Size
-          </p>
-        </div>
-        <div class="ml-48">
-          <p class="text-[#6766EF] font-ps-aelyn text-7xl text-reveal">
-            Restaurant
-            <span class="text-[#23201E] ml-6 text-reveal">Companies</span>
-          </p>
-        </div>
-      </div>
-      <script type="module" src="/src/main.js"></script>
+  <body class="relative" id="app">
+    <div class="absolute left-[20%] top-0 w-72 h-72 overflow-hidden">
+      <img
+        class="image-y w-full h-full transform -translate-y-full"
+        src="/src/assets/images/image-two.png"
+        alt="kime-img"
+      />
     </div>
+    <div class="absolute right-0 top-[20%] w-44 h-[22rem] overflow-hidden">
+      <img
+        class="image-x w-full h-full transform translate-x-full"
+        src="/src/assets/images/image-three.png"
+        alt="kime-img"
+      />
+    </div>
+    <nav class="flex justify-between">
+      <div
+        class="nav-links transform -translate-y-[10vh] absolute left-[10%] cursor-pointer"
+      >
+        <img
+          class="menu w-11 h-12 object-contain"
+          src="/src/assets/menu.svg"
+          alt="menu_icon"
+        />
+      </div>
+      <div class="">
+        <img
+          class="logo transform translate-x-[45vw] translate-y-[45vh] object-contain"
+          src="/src/assets/logo.png"
+          alt="logo"
+        />
+      </div>
+      <div class="nav-links transform absolute right-[10%] -translate-y-[10vh]">
+        <button
+          class="font-cabin border-1 border-solid border-[#112A50] px-6 py-2 text-sm text-[#112A50] cursor-pointer"
+        >
+          Request a quote here
+        </button>
+      </div>
+    </nav>
+    <div class="w-[80%] mx-auto mt-32 pl-16 space-y-8">
+      <div>
+        <p class="text-[#6766EF] font-ps-aelyn text-7xl text-reveal">
+          Bookkeeping <span class="text-[#23201E] ml-6">And</span>
+        </p>
+      </div>
+      <div class="ml-72">
+        <p class="text-[#23201E] font-ps-aelyn text-7xl text-reveal">
+          Tech <span class="text-[#6766EF] ml-6">Consulting</span>
+        </p>
+      </div>
+      <div class="ml-24">
+        <p class="text-[#23201E] font-ps-aelyn text-7xl text-reveal">
+          For Mid-Size
+        </p>
+      </div>
+      <div class="ml-48">
+        <p class="text-[#6766EF] font-ps-aelyn text-7xl text-reveal">
+          Restaurant
+          <span class="text-[#23201E] ml-6 text-reveal">Companies</span>
+        </p>
+      </div>
+    </div>
+    <div class="absolute left-[20%] w-64">
+      <p
+        class="font-cairo text-xs/6 mt-20 mb-10 transform -translate-x-24 opacity-0 hero-text"
+      >
+        We manage your accounting with efficient, accurate and flexible
+        solutions. It’s time to get you out of the office so you can run a more
+        profitable business.
+      </p>
+    </div>
+    <div class="absolute left-0 bottom-0 w-32 h-[22rem] overflow-hidden">
+      <img
+        class="image-x w-full h-full transform -translate-x-full"
+        src="/src/assets/images/image-four.png"
+        alt="kime-img"
+      />
+    </div>
+    <div class="absolute right-[20%] bottom-0 w-72 h-72 overflow-hidden">
+      <img
+        class="image-y w-full h-full transform translate-y-full"
+        src="/src/assets/images/image-one.png"
+        alt="kime-img"
+      />
+    </div>
+    <script type="module" src="/src/main.js"></script>
   </body>
 </html>
