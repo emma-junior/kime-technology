@@ -7,6 +7,7 @@ gsap.registerPlugin(TextPlugin);
 export default class Home {
   constructor() {
     this.homeIntro();
+    this.homeActions();
   }
 
   homeIntro() {
@@ -80,6 +81,39 @@ export default class Home {
     window.addEventListener("load", function (event) {
       init();
     });
+  }
+
+  homeActions() {
+    console.log("Home actions");
+    const menu = document.querySelector(".menu");
+
+    const tl = gsap
+      .timeline({ paused: true })
+      .to([".hero-text", ".image", ".text-reveal", ".nav-links", ".logo"], {
+        opacity: 0,
+        ease: "linear",
+        duration: 0.5,
+        stagger: 0.1,
+      })
+      .to(
+        ".menu-opened",
+        {
+          autoAlpha: 1,
+          ease: "linear",
+        },
+        "-=0.4"
+      )
+      .to(
+        ".sidebar",
+        {
+          ease: "power1.in",
+          duration: 0.7,
+          x: 0,
+        },
+        "<"
+      );
+
+    menu.addEventListener("click", () => tl.play());
   }
 }
 

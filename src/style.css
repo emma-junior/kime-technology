@@ -14,16 +14,11 @@
 }
 
 body {
-  background: #fdf3e2;
-  background: linear-gradient(
-    17deg,
-    rgba(253, 243, 226, 1) 30%,
-    rgba(245, 227, 251, 1) 90%,
-    rgba(255, 255, 255, 1) 100%
-  );
+  background-image: url("/src/assets/images/page-background.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  background-position: center;
   min-height: 100vh;
 }
 
