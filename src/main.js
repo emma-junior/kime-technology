@@ -130,7 +130,7 @@ export default class Home {
       .to(
         ".logo",
         {
-          ease: "linear",
+          ease: "power1.out",
           scale: 0.6,
           transform: "translate(45vw,2vh)",
         },
@@ -141,8 +141,8 @@ export default class Home {
         ease: "linear",
       });
 
-    close.addEventListener("click", () => closemenu.play());
-    menu.addEventListener("click", () => tl.play());
+    close.addEventListener("click", () => closemenu.restart());
+    menu.addEventListener("click", () => tl.restart());
   }
 }
 
