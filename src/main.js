@@ -85,6 +85,7 @@ export default class Home {
 
   homeActions() {
     const menu = document.querySelector(".menu");
+    const close = document.querySelector(".close");
 
     const tl = gsap
       .timeline({ paused: true })
@@ -120,6 +121,27 @@ export default class Home {
         opacity: 1,
       });
 
+    const closemenu = gsap
+      .timeline({ paused: true })
+      .to(".menu-opened", {
+        autoAlpha: 0,
+        ease: "linear",
+      })
+      .to(
+        ".logo",
+        {
+          ease: "linear",
+          scale: 0.6,
+          transform: "translate(45vw,2vh)",
+        },
+        "<"
+      )
+      .to([".hero-text", ".image", ".text-reveal", ".nav-links"], {
+        opacity: 1,
+        ease: "linear",
+      });
+
+    close.addEventListener("click", () => closemenu.play());
     menu.addEventListener("click", () => tl.play());
   }
 }
