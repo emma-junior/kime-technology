@@ -84,7 +84,6 @@ export default class Home {
   }
 
   homeActions() {
-    console.log("Home actions");
     const menu = document.querySelector(".menu");
 
     const tl = gsap
@@ -111,7 +110,15 @@ export default class Home {
           x: 0,
         },
         "<"
-      );
+      )
+      .to(".logo", {
+        ease: "linear",
+        scale: 0.8,
+        transform: "translate(68vw,45vh)",
+      })
+      .to([".close", ".contact-info", ".menu-links", ".logo"], {
+        opacity: 1,
+      });
 
     menu.addEventListener("click", () => tl.play());
   }

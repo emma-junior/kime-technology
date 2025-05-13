@@ -102,10 +102,25 @@
       class="fixed w-full h-screen top-0 invisible opacity-0 menu-opened flex"
     >
       <div
-        class="sidebar w-[50%] h-full bg-[#0F284F] transform -translate-x-full"
-      ></div>
+        class="sidebar w-[50%] h-full bg-[#0F284F] transform -translate-x-full relative flex items-center"
+      >
+        <img
+          class="absolute left-[20%] top-[5%] w-9 h-9 cursor-pointer opacity-0 close"
+          src="/src/assets/times.svg"
+          alt="close"
+        />
+        <ul class="space-y-8 ml-[20%] opacity-0 menu-links">
+          <li class="text-[#8A9EBD] font-ps-aelyn text-4xl">Our Services</li>
+          <li class="text-[#8A9EBD] font-ps-aelyn text-4xl">
+            Strategic Partners & Products
+          </li>
+          <li class="text-[#8A9EBD] font-ps-aelyn text-4xl">About Us</li>
+          <li class="text-[#8A9EBD] font-ps-aelyn text-4xl">Our Team</li>
+          <li class="text-[#8A9EBD] font-ps-aelyn text-4xl">Contact Us</li>
+        </ul>
+      </div>
       <div class="relative">
-        <div class="flex w-full absolute bottom-[4%]">
+        <div class="flex w-full absolute bottom-[4%] opacity-0 contact-info">
           <div class="px-20 py-8 border-r-[1.5px] border-[#8184a6]">
             <p class="text-center font-cairo text-sm text-[#0F284F]">
               Let’s Get In Touch
