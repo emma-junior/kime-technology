@@ -86,6 +86,7 @@ export default class Home {
   homeActions() {
     const menu = document.querySelector(".menu");
     const close = document.querySelector(".close");
+    const customBtn = document.querySelectorAll(".request-btn");
 
     const tl = gsap
       .timeline({ paused: true })
@@ -140,6 +141,36 @@ export default class Home {
         opacity: 1,
         ease: "linear",
       });
+
+    customBtn.forEach(function (item, index) {
+      const tl = gsap
+        .timeline({ paused: true })
+        .to(item.querySelector(".request-one"), {
+          y: "-110%",
+          duration: 0.2,
+          color: "#fff",
+        })
+        .to(
+          item.querySelector(".request-two"),
+          {
+            y: "0%",
+            duration: 0.2,
+            color: "#fff",
+          },
+          "<"
+        )
+        .to(
+          ".request-btn",
+          {
+            background: "#112A50",
+            borderColor: "#112A50",
+            duration: 0.2,
+          },
+          "<"
+        );
+      item.addEventListener("mouseenter", () => tl.play());
+      item.addEventListener("mouseleave", () => tl.reverse());
+    });
 
     close.addEventListener("click", () => closemenu.restart());
     menu.addEventListener("click", () => tl.restart());
