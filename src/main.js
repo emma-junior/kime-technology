@@ -29,7 +29,7 @@ export default class Home {
           ease: "linear",
           scale: 0.6,
           duration: 1,
-          transform: "translate(45vw,2vh)",
+          transform: "translate(44vw,2vh)",
         })
         .to(
           ".nav-links",
@@ -116,7 +116,7 @@ export default class Home {
       .to(".logo", {
         ease: "linear",
         scale: 0.8,
-        transform: "translate(68vw,45vh)",
+        transform: "translate(69vw,45vh)",
       })
       .to([".close", ".contact-info", ".menu-links", ".logo"], {
         opacity: 1,
@@ -133,7 +133,7 @@ export default class Home {
         {
           ease: "power1.out",
           scale: 0.6,
-          transform: "translate(45vw,2vh)",
+          transform: "translate(44vw,2vh)",
         },
         "<"
       )

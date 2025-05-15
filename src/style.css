@@ -11,6 +11,8 @@
   --font-ps-aelyn: PS-Aelyn, "sans-serif";
   --font-cabin: Cabin, "sans-serif";
   --font-cairo: Cairo, "sans-serif";
+
+  --breakpoint-2xl: 101rem;
 }
 
 body {
@@ -31,7 +33,7 @@ body {
   @apply inline-flex relative border-1 border-solid border-[#112A50] h-10 cursor-pointer overflow-hidden;
 }
 .request-span {
-  @apply absolute inset-0 inline-flex items-center justify-center font-cabin font-light text-[#1b3862] text-xs;
+  @apply absolute inset-0 inline-flex items-center justify-center font-cabin font-light text-[#1b3862] text-xs 2xl:text-sm;
 }
 
 .request-two {
