@@ -30,7 +30,7 @@ body {
 }
 
 .request-btn {
-  @apply inline-flex relative border-1 border-solid border-[#112A50] h-10 cursor-pointer overflow-hidden;
+  @apply inline-flex relative border-1 border-solid border-[#112A50] h-8 md:h-10 cursor-pointer overflow-hidden;
 }
 .request-span {
   @apply absolute inset-0 inline-flex items-center justify-center font-cabin font-light text-[#1b3862] text-xs 2xl:text-sm;

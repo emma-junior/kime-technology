@@ -29,14 +29,14 @@ export default class Home {
           ease: "linear",
           scale: 0.6,
           duration: 1,
-          transform: "translate(44vw,2vh)",
+          y: "1vh",
         })
         .to(
           ".nav-links",
           {
             ease: "linear",
             duration: 1,
-            y: 30,
+            y: "2vh",
           },
           "<"
         )
