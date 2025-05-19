@@ -88,7 +88,19 @@ export default class Home {
     const close = document.querySelector(".close");
     const customBtn = document.querySelectorAll(".request-btn");
 
-    const tl = gsap
+    let transformLogo;
+
+    const width = window.innerWidth;
+
+    if (width < 768) {
+      transformLogo = "translate(37vw, 1vh)";
+    } else if (width < 1024) {
+      transformLogo = "translate(40vw, 1vh)";
+    } else {
+      transformLogo = "translate(43vw, 1vh)";
+    }
+
+    const openMenu = gsap
       .timeline({ paused: true })
       .to([".hero-text", ".image", ".text-reveal", ".nav-links", ".logo"], {
         opacity: 0,
@@ -133,7 +145,7 @@ export default class Home {
         {
           ease: "power1.out",
           scale: 0.6,
-          transform: "translate(44vw,2vh)",
+          transform: transformLogo,
         },
         "<"
       )
@@ -173,7 +185,7 @@ export default class Home {
     });
 
     close.addEventListener("click", () => closemenu.restart());
-    menu.addEventListener("click", () => tl.restart());
+    menu.addEventListener("click", () => openMenu.restart());
   }
 }
 
